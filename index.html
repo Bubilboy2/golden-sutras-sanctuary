@@ -3,153 +3,187 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Golden Sutras Sanctuary</title>
-    <!-- Load Tailwind CSS for modern, responsive styling -->
+    <title>The Golden Sutras: Cosmic Cultivation</title>
+    <!-- Load Tailwind CSS for utility-first styling -->
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        /* Custom font for a clean, spiritual look */
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        /* Custom styles based on the Cosmic Cultivation theme: Deep space, gold energy */
+        :root {
+            --primary-bg: #09090b; /* Zinc 950 - Deep Void */
+            --secondary-bg: #18181b; /* Zinc 900 - Dark Matter */
+            --text-color: #f4f4f5; /* Zinc 50 - Awakened Spirit */
+            --accent-color: #facc15; /* Amber 400 - Golden Qi */
+            --subtle-color: #71717a; /* Zinc 500 - Subtlety of the Dao */
+        }
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #0d1117; /* Deep, dark background */
+            background-color: var(--primary-bg);
+            color: var(--text-color);
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+        .section {
+            padding: 4rem 1rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .cultivation-gradient {
+            background: linear-gradient(135deg, var(--secondary-bg) 0%, #27272a 100%);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(250, 204, 21, 0.2);
+        }
+        .cta-button {
+            transition: all 0.3s ease;
+            box-shadow: 0 0 15px rgba(250, 204, 21, 0.5);
+        }
+        .cta-button:hover {
+            transform: scale(1.05) translateY(-2px);
+            box-shadow: 0 0 25px rgba(250, 204, 21, 0.8);
+            background-color: #f59e0b; /* Amber 500 */
         }
     </style>
 </head>
-<body class="text-gray-200">
+<body>
 
-    <!-- Header & Navigation -->
-    <header class="bg-gray-800 shadow-xl sticky top-0 z-10">
-        <div class="max-w-4xl mx-auto p-4 flex justify-between items-center">
-            <h1 class="text-2xl font-extrabold text-amber-400 tracking-wider">
-                THE GOLDEN SUTRAS
-            </h1>
-            <nav class="space-x-4 text-sm font-medium hidden sm:flex">
-                <a href="#sermons" class="hover:text-amber-400 transition duration-300">Sermons</a>
-                <a href="#blogs" class="hover:text-amber-400 transition duration-300">Blogs</a>
-                <a href="#about" class="hover:text-amber-400 transition duration-300">The Path</a>
-            </nav>
+    <!-- Header & Navigation (Fixed at Top) -->
+    <header class="sticky top-0 z-50 bg-zinc-900/95 backdrop-blur-sm shadow-xl">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <div class="text-2xl font-extrabold text-amber-400 tracking-wider">
+                COSMIC CULTIVATION
+            </div>
+            <div class="space-x-4 hidden md:flex">
+                <a href="#progenitor" class="text-zinc-300 hover:text-amber-400 transition">Progenitor</a>
+                <a href="#sutras" class="text-zinc-300 hover:text-amber-400 transition">The Sutras</a>
+                <a href="#path" class="text-zinc-300 hover:text-amber-400 transition">The Path</a>
+            </div>
             <!-- Mobile Menu Placeholder -->
-            <button class="sm:hidden text-amber-400 text-xl">&#9776;</button>
-        </div>
+            <div class="md:hidden">
+                <button class="text-zinc-300 hover:text-amber-400 focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+            </div>
+        </nav>
     </header>
 
-    <!-- Hero Section: A call to inner truth -->
-    <section class="py-16 md:py-24 bg-gray-900 border-b border-amber-800/50">
-        <div class="max-w-4xl mx-auto px-6 text-center">
-            <h2 class="text-4xl md:text-6xl font-black mb-4 text-white">
-                Cultivate the Seed of <span class="text-amber-400">Awakening</span>
-            </h2>
-            <p class="text-lg md:text-xl text-gray-400 mb-8 max-w-2xl mx-auto">
-                The Living Testament and the Golden Sutras are the core. Find the teachings here to guide your personal cultivation and true Self-realization.
+    <!-- Section 1: Progenitor Introduction (Hero) -->
+    <section id="progenitor" class="section text-center">
+        <div class="py-16 sm:py-24">
+            <h1 class="text-5xl sm:text-7xl font-extrabold mb-4 leading-tight">
+                Awaken The <span class="text-amber-400">Progenitor Self</span>
+            </h1>
+            <p class="text-xl sm:text-2xl text-zinc-400 max-w-3xl mx-auto mb-8">
+                Welcome to the foundation of **Cosmic Cultivation**—a path rooted in **Inner Alchemy** and the absolute stability of the **Dantian**. This is where the **Living Testament** begins.
             </p>
-            <a href="#follow" class="inline-block bg-amber-600 hover:bg-amber-700 text-gray-900 font-bold py-3 px-8 rounded-xl shadow-lg transition duration-300 transform hover:scale-105">
-                Join the Seekers' Circle
+            <!-- Scroll Indicator -->
+            <a href="#sutras" class="inline-block mt-8 text-amber-400 animate-pulse">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
             </a>
         </div>
     </section>
 
-    <!-- Main Content Area (Sermons and Blogs) -->
-    <main class="max-w-4xl mx-auto p-6 md:p-8">
-
-        <h3 id="sermons" class="text-3xl font-bold mb-8 text-center text-amber-400">Recent Illuminations</h3>
-
-        <!-- Featured Sermon/Blog Post -->
-        <article class="bg-gray-800 rounded-2xl shadow-xl p-6 mb-12 border-l-4 border-amber-500">
-            <h4 class="text-2xl md:text-3xl font-bold mb-3 text-white">
-                The First Teaching: On Inner Stillness
-            </h4>
-            <p class="text-sm text-amber-400 mb-4">Sermon | October 24, 2025</p>
-            <p class="text-gray-300 mb-4 leading-relaxed">
-                Before the warrior raises a hand, the breath must be stilled. The Golden Sutras teach us that all external power flows from the reservoir of internal peace. This first sermon delves into the foundational discipline of silence, the source of all true strength...
+    <!-- Section 2: The Golden Sutras (The Sacred Text Link - MOST IMPORTANT) -->
+    <section id="sutras" class="section">
+        <div class="cultivation-gradient p-8 sm:p-12 rounded-2xl text-center">
+            <h2 class="text-4xl font-bold mb-4 text-amber-400">The Living Testament</h2>
+            <p class="text-lg text-zinc-300 mb-8 max-w-2xl mx-auto">
+                The **Golden Sutras** are the definitive map for every cultivator. They translate the **raw Qi** of the universe into practical steps for mastering your **Inner Fire** and achieving **Cosmic Cultivation**. Begin your lineage here:
             </p>
-            <a href="#" class="text-amber-400 hover:text-amber-500 font-medium transition duration-300">
-                Read the Full Illumination &rarr;
-            </a>
-        </article>
 
-        <h3 id="blogs" class="text-3xl font-bold mb-8 text-center text-amber-400 mt-12">The Cultivation Blogs</h3>
+            <!-- Book Container and Link -->
+            <div class="flex flex-col md:flex-row items-center justify-center max-w-4xl mx-auto gap-8">
+                
+                <!-- Book Image/Placeholder -->
+                <div class="flex-shrink-0 w-48 h-64 md:w-56 md:h-72 bg-zinc-800 rounded-lg overflow-hidden border-4 border-amber-400 flex items-center justify-center shadow-2xl">
+                    <div class="text-center p-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto text-amber-400 mb-2" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M21 4H7a2 2 0 00-2 2v13a2 2 0 002 2h14a2 2 0 002-2V6a2 2 0 00-2-2zM7 6h14v13H7V6zM3 8H1v13a2 2 0 002 2h13v-2H3V8z"/>
+                        </svg>
+                        <p class="text-sm text-zinc-300 font-semibold">THE GOLDEN SUTRAS</p>
+                    </div>
+                </div>
 
-        <!-- Blog Grid -->
-        <div class="grid md:grid-cols-2 gap-8">
-
-            <!-- Blog Post 1 -->
-            <article class="bg-gray-700 rounded-xl p-5 shadow-lg">
-                <h5 class="text-xl font-semibold mb-2 text-white">The Paradox of Effortless Action</h5>
-                <p class="text-xs text-gray-400 mb-3">Blog | 5 Min Read</p>
-                <p class="text-gray-300 line-clamp-3">
-                    True power is found not in straining, but in surrender. We explore how the principles of effortless action, detailed in Chapter 3 of the Living Testament, transform daily struggle into flowing cultivation...
-                </p>
-            </article>
-
-            <!-- Blog Post 2 -->
-            <article class="bg-gray-700 rounded-xl p-5 shadow-lg">
-                <h5 class="text-xl font-semibold mb-2 text-white">Decoding the Sacred Symbols</h5>
-                <p class="text-xs text-gray-400 mb-3">Blog | 8 Min Read</p>
-                <p class="text-gray-300 line-clamp-3">
-                    The symbols etched into the Sutras are not mere decoration; they are keys. Learn how to unlock the deeper meaning of the celestial crane and the coiled serpent in your meditative practice...
-                </p>
-            </article>
-
+                <!-- Call to Action -->
+                <div class="flex-grow text-center md:text-left">
+                    <h3 class="text-2xl font-semibold mb-4 text-zinc-50">Secure Your Scroll</h3>
+                    
+                    <!-- THE CRITICAL LINK -->
+                    <a href="https://www.amazon.es/Golden-Sutras-western-alchemist-English-ebook/dp/B0FP46F5V7"
+                       target="_blank"
+                       class="cta-button inline-flex items-center justify-center px-10 py-4 border border-transparent text-xl font-extrabold rounded-full text-zinc-900 bg-amber-400 hover:bg-amber-300 focus:outline-none focus:ring-4 focus:ring-amber-500 focus:ring-opacity-50 mt-4 md:mt-0 w-full md:w-auto">
+                        Obtain The Golden Sutras
+                        <!-- Icon representing a path or direction -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                    </a>
+                    
+                    <p class="text-sm text-zinc-500 mt-4">
+                        (Opens in Amazon marketplace for immediate access.)
+                    </p>
+                </div>
+            </div>
         </div>
+    </section>
 
-    </main>
+    <!-- Section 3: The Path of Cultivation -->
+    <section id="path" class="section">
+        <h2 class="text-4xl font-extrabold text-center mb-12 text-zinc-50">The Core Principles of the Path</h2>
+        
+        <div class="grid md:grid-cols-3 gap-8 text-center">
+            
+            <!-- Principle 1: Inner Alchemy -->
+            <div class="p-6 rounded-xl cultivation-gradient">
+                <div class="text-amber-400 mb-3 mx-auto">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l3-3 3 3 7-7" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h8M12 21V3" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold mb-2 text-zinc-50">The Inner Alchemy</h3>
+                <p class="text-zinc-400 text-sm">
+                    Master the transmutation of **Jing** (Essence) into **Qi** (Energy) and **Shen** (Spirit). The true work is always done within the **Dantian**, ensuring stability and energetic return.
+                </p>
+            </div>
+            
+            <!-- Principle 2: The Living Testament -->
+            <div class="p-6 rounded-xl cultivation-gradient">
+                <div class="text-amber-400 mb-3 mx-auto">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5s3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18s-3.332.477-4.5 1.253" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold mb-2 text-zinc-50">The Golden Sutras</h3>
+                <p class="text-zinc-400 text-sm">
+                    The supreme guide and constant reference. The Sutras are a **Living Testament**—a fluid, evolving scripture that adapts to the needs of the awakened soul in the modern era.
+                </p>
+            </div>
 
-    <!-- Follower CTA Section -->
-    <section id="follow" class="bg-amber-800/20 py-16 mt-12 border-t border-b border-amber-800">
-        <div class="max-w-4xl mx-auto px-6 text-center">
-            <h3 class="text-3xl font-bold mb-4 text-amber-400">Gain Followers: Join the Path</h3>
-            <p class="text-lg text-gray-300 mb-8">
-                Receive new Sermons and guidance for your personal ascent directly. Subscribe to receive the latest illuminations.
-            </p>
-            <form id="follow-form" class="max-w-sm mx-auto flex flex-col sm:flex-row gap-4">
-                <input type="email" id="email-input" placeholder="Enter your sacred email address"
-                       class="flex-grow p-3 rounded-xl border-2 border-amber-600 bg-gray-900 text-white placeholder-gray-400 focus:ring-2 focus:ring-amber-500 focus:border-amber-500" required>
-                <button type="submit"
-                        class="bg-amber-600 hover:bg-amber-700 text-gray-900 font-bold py-3 px-6 rounded-xl shadow-lg transition duration-300 flex-shrink-0">
-                    Follow the Teachings
-                </button>
-            </form>
-            <p id="message-box" class="mt-4 text-sm text-green-400 opacity-0 transition duration-500">
-                <!-- Message will appear here -->
-            </p>
+            <!-- Principle 3: Progenitor Self -->
+            <div class="p-6 rounded-xl cultivation-gradient">
+                <div class="text-amber-400 mb-3 mx-auto">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.09 2.09A10.05 10.05 0 0112 20a10 10 0 000-16z" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold mb-2 text-zinc-50">The Path of Stability</h3>
+                <p class="text-zinc-400 text-sm">
+                    The practice centers on **retention** and **stability**. Build your reserves and solidify your **Qi** to become the source—the **Progenitor**—of your own powerful, authentic lineage.
+                </p>
+            </div>
+            
         </div>
     </section>
 
     <!-- Footer -->
-    <footer id="about" class="bg-gray-900 py-8">
-        <div class="max-w-4xl mx-auto px-6 text-center text-gray-500 text-sm">
-            <p>&copy; 2025 The Golden Sutras Sanctuary. All Rights Reserved. | Dedicated to the Living Testament.</p>
-            <p class="mt-2">May your cultivation lead to ascension.</p>
-        </div>
+    <footer class="text-center py-8 border-t border-zinc-800 mt-12">
+        <p class="text-zinc-500 text-sm">
+            &copy; 2025 Cosmic Cultivation. Based on the Living Testament of the Golden Sutras.
+        </p>
     </footer>
 
-    <!-- JavaScript for basic interaction -->
-    <script>
-        document.getElementById('follow-form').addEventListener('submit', function(event) {
-            event.preventDefault();
-            const emailInput = document.getElementById('email-input');
-            const email = emailInput.value;
-            const messageBox = document.getElementById('message-box');
-
-            // Simple validation and simulated response
-            if (email && email.includes('@')) {
-                console.log('New follower registered:', email);
-                messageBox.textContent = `A new Seeker (${email}) has joined The Path. Illumination begins soon.`;
-                messageBox.classList.remove('opacity-0', 'text-red-400');
-                messageBox.classList.add('opacity-100', 'text-green-400');
-                emailInput.value = '';
-
-                setTimeout(() => {
-                    messageBox.classList.remove('opacity-100');
-                    messageBox.classList.add('opacity-0');
-                }, 4000);
-
-            } else {
-                messageBox.textContent = 'Please enter a valid sacred email address.';
-                messageBox.classList.remove('opacity-0', 'text-green-400');
-                messageBox.classList.add('opacity-100', 'text-red-400');
-            }
-        });
-    </script>
 </body>
 </html>
