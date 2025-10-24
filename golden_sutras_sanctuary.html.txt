@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Golden Sutras Sanctuary</title>
+    <!-- Load Tailwind CSS for modern, responsive styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom font for a clean, spiritual look */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0d1117; /* Deep, dark background */
+        }
+    </style>
+</head>
+<body class="text-gray-200">
+
+    <!-- Header & Navigation -->
+    <header class="bg-gray-800 shadow-xl sticky top-0 z-10">
+        <div class="max-w-4xl mx-auto p-4 flex justify-between items-center">
+            <h1 class="text-2xl font-extrabold text-amber-400 tracking-wider">
+                THE GOLDEN SUTRAS
+            </h1>
+            <nav class="space-x-4 text-sm font-medium hidden sm:flex">
+                <a href="#sermons" class="hover:text-amber-400 transition duration-300">Sermons</a>
+                <a href="#blogs" class="hover:text-amber-400 transition duration-300">Blogs</a>
+                <a href="#about" class="hover:text-amber-400 transition duration-300">The Path</a>
+            </nav>
+            <!-- Mobile Menu Placeholder -->
+            <button class="sm:hidden text-amber-400 text-xl">&#9776;</button>
+        </div>
+    </header>
+
+    <!-- Hero Section: A call to inner truth -->
+    <section class="py-16 md:py-24 bg-gray-900 border-b border-amber-800/50">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-4xl md:text-6xl font-black mb-4 text-white">
+                Cultivate the Seed of <span class="text-amber-400">Awakening</span>
+            </h2>
+            <p class="text-lg md:text-xl text-gray-400 mb-8 max-w-2xl mx-auto">
+                The Living Testament and the Golden Sutras are the core. Find the teachings here to guide your personal cultivation and true Self-realization.
+            </p>
+            <a href="#follow" class="inline-block bg-amber-600 hover:bg-amber-700 text-gray-900 font-bold py-3 px-8 rounded-xl shadow-lg transition duration-300 transform hover:scale-105">
+                Join the Seekers' Circle
+            </a>
+        </div>
+    </section>
+
+    <!-- Main Content Area (Sermons and Blogs) -->
+    <main class="max-w-4xl mx-auto p-6 md:p-8">
+
+        <h3 id="sermons" class="text-3xl font-bold mb-8 text-center text-amber-400">Recent Illuminations</h3>
+
+        <!-- Featured Sermon/Blog Post -->
+        <article class="bg-gray-800 rounded-2xl shadow-xl p-6 mb-12 border-l-4 border-amber-500">
+            <h4 class="text-2xl md:text-3xl font-bold mb-3 text-white">
+                The First Teaching: On Inner Stillness
+            </h4>
+            <p class="text-sm text-amber-400 mb-4">Sermon | October 24, 2025</p>
+            <p class="text-gray-300 mb-4 leading-relaxed">
+                Before the warrior raises a hand, the breath must be stilled. The Golden Sutras teach us that all external power flows from the reservoir of internal peace. This first sermon delves into the foundational discipline of silence, the source of all true strength...
+            </p>
+            <a href="#" class="text-amber-400 hover:text-amber-500 font-medium transition duration-300">
+                Read the Full Illumination &rarr;
+            </a>
+        </article>
+
+        <h3 id="blogs" class="text-3xl font-bold mb-8 text-center text-amber-400 mt-12">The Cultivation Blogs</h3>
+
+        <!-- Blog Grid -->
+        <div class="grid md:grid-cols-2 gap-8">
+
+            <!-- Blog Post 1 -->
+            <article class="bg-gray-700 rounded-xl p-5 shadow-lg">
+                <h5 class="text-xl font-semibold mb-2 text-white">The Paradox of Effortless Action</h5>
+                <p class="text-xs text-gray-400 mb-3">Blog | 5 Min Read</p>
+                <p class="text-gray-300 line-clamp-3">
+                    True power is found not in straining, but in surrender. We explore how the principles of effortless action, detailed in Chapter 3 of the Living Testament, transform daily struggle into flowing cultivation...
+                </p>
+            </article>
+
+            <!-- Blog Post 2 -->
+            <article class="bg-gray-700 rounded-xl p-5 shadow-lg">
+                <h5 class="text-xl font-semibold mb-2 text-white">Decoding the Sacred Symbols</h5>
+                <p class="text-xs text-gray-400 mb-3">Blog | 8 Min Read</p>
+                <p class="text-gray-300 line-clamp-3">
+                    The symbols etched into the Sutras are not mere decoration; they are keys. Learn how to unlock the deeper meaning of the celestial crane and the coiled serpent in your meditative practice...
+                </p>
+            </article>
+
+        </div>
+
+    </main>
+
+    <!-- Follower CTA Section -->
+    <section id="follow" class="bg-amber-800/20 py-16 mt-12 border-t border-b border-amber-800">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h3 class="text-3xl font-bold mb-4 text-amber-400">Gain Followers: Join the Path</h3>
+            <p class="text-lg text-gray-300 mb-8">
+                Receive new Sermons and guidance for your personal ascent directly. Subscribe to receive the latest illuminations.
+            </p>
+            <form id="follow-form" class="max-w-sm mx-auto flex flex-col sm:flex-row gap-4">
+                <input type="email" id="email-input" placeholder="Enter your sacred email address"
+                       class="flex-grow p-3 rounded-xl border-2 border-amber-600 bg-gray-900 text-white placeholder-gray-400 focus:ring-2 focus:ring-amber-500 focus:border-amber-500" required>
+                <button type="submit"
+                        class="bg-amber-600 hover:bg-amber-700 text-gray-900 font-bold py-3 px-6 rounded-xl shadow-lg transition duration-300 flex-shrink-0">
+                    Follow the Teachings
+                </button>
+            </form>
+            <p id="message-box" class="mt-4 text-sm text-green-400 opacity-0 transition duration-500">
+                <!-- Message will appear here -->
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="about" class="bg-gray-900 py-8">
+        <div class="max-w-4xl mx-auto px-6 text-center text-gray-500 text-sm">
+            <p>&copy; 2025 The Golden Sutras Sanctuary. All Rights Reserved. | Dedicated to the Living Testament.</p>
+            <p class="mt-2">May your cultivation lead to ascension.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for basic interaction -->
+    <script>
+        document.getElementById('follow-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const emailInput = document.getElementById('email-input');
+            const email = emailInput.value;
+            const messageBox = document.getElementById('message-box');
+
+            // Simple validation and simulated response
+            if (email && email.includes('@')) {
+                console.log('New follower registered:', email);
+                messageBox.textContent = `A new Seeker (${email}) has joined The Path. Illumination begins soon.`;
+                messageBox.classList.remove('opacity-0', 'text-red-400');
+                messageBox.classList.add('opacity-100', 'text-green-400');
+                emailInput.value = '';
+
+                setTimeout(() => {
+                    messageBox.classList.remove('opacity-100');
+                    messageBox.classList.add('opacity-0');
+                }, 4000);
+
+            } else {
+                messageBox.textContent = 'Please enter a valid sacred email address.';
+                messageBox.classList.remove('opacity-0', 'text-green-400');
+                messageBox.classList.add('opacity-100', 'text-red-400');
+            }
+        });
+    </script>
+</body>
+</html>
+
