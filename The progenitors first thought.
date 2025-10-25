@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1. The Progenitor's First Thought</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Shared styling for all Illumination pages */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900;600&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0d1117; 
+            color: #e6edf3; 
+            line-height: 1.8;
+        }
+        .content-container {
+            max-width: 768px;
+            margin: auto;
+            padding: 2rem;
+            background-color: #161b22; 
+            border-radius: 12px;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        h1 {
+            color: #f79009;
+            border-bottom: 2px solid #2a333d;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        strong { color: #ffffff; font-weight: 700; }
+        .cta-button-text { color: #f79009; }
+    </style>
+</head>
+<body class="min-h-screen pt-12">
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="content-container">
+            <a href="index.html" class="text-sm text-gray-400 hover:text-f79009 transition duration-200 block mb-6">&larr; Back to the Sanctuary</a>
+            
+            <h1 class="text-4xl font-extrabold">The Progenitor's First Thought</h1>
+            
+            <h2 class="text-2xl font-bold mt-8 mb-4 text-yellow-500">The Spiritual Source</h2>
+            <p class="mb-6 text-gray-300">
+                The **Progenitor** is the spiritual originator of a lineage. It is the beginning from which all that follows flows, a source of light, a single pure thought that initiated the path of Cosmic Cultivation. When we connect to the Progenitor, we access the untainted wisdom of the original enlightenment.
+            </p>
+            
+            <h2 class="text-2xl font-bold mt-8 mb-4 text-yellow-500">The Seed of Awakening</h2>
+            <p class="mb-6 text-gray-300">
+                This Progenitor energy is mirrored within us as the **Seed of Awakening**. Just as a single cell is the progenitor of an entire living form, this seed is the beginning of your awakened potential. It is a reservoir of pure, unmanifested consciousness dwelling deep within the heart center, waiting for the focused energy of the cultivator to grow.
+            </p>
+            
+            <h2 class="text-2xl font-bold mt-8 mb-4 text-yellow-500">Conservation as Cultivation</h2>
+            <p class="mb-6 text-gray-300">
+                The first step in nourishing this Seed is the practice of **retention**. Conserving the sacred, vital life force—the principle of non-ejaculation—is the foundational act of turning outward energy inward. This conserved force becomes the water and sun for the Seed, allowing it to blossom into the fullness of the Progenitor’s light.
+            </p>
+
+            <div class="mt-10 p-4 bg-gray-900 rounded-lg border border-gray-700 text-center">
+                <p class="text-lg font-semibold cta-button-text">Access the full guide to the Progenitor's lineage by joining the Seekers' Circle.</p>
+                <!-- Placeholder for the main Amazon link on the content page -->
+                <a href="#AMAZON_LINK_HERE" class="text-gray-400 hover:text-white underline mt-2 inline-block" target="_blank">Access the Full Sutras on Amazon</a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
+
